@@ -20,7 +20,7 @@ class CicdpipelineStack(Stack):
         cicd=modern_pipeline = pipelines.CodePipeline(self, "Pipeline",
     self_mutation=False,
     synth=pipelines.ShellStep("Synth",
-        input=pipelines.CodePipelineSource.github("Ritik294/awscicdproject", "main" ),
+        input=pipelines.CodePipelineSource.git_hub("Ritik294/awscicdproject", "main" ),
         commands=["npm ci", "npm run build", "npx cdk synth"
         ]
     )
