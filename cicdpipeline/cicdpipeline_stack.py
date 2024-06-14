@@ -25,4 +25,4 @@ class CicdpipelineStack(Stack):
     )
 )
 app =App()
-InfraStack(app, "cicdstack")
+CicdpipelineStack(app, "cicdstack")
