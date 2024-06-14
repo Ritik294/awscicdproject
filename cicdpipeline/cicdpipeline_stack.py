@@ -2,10 +2,11 @@ from aws_cdk import (
     # Duration,
     Stack,
     App,
+    pipelines
     
     # aws_sqs as sqs,
 )
-from aws_cdk.pipelines import *
+
 from constructs import Construct
 
 class CicdpipelineStack(Stack):
